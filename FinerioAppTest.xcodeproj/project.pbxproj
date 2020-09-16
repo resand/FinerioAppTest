@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F345C5025101C2900AEE075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C4F25101C2900AEE075 /* AppDelegate.swift */; };
+		0F345C5725101C2900AEE075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F345C5525101C2900AEE075 /* Main.storyboard */; };
+		0F345C5925101C2B00AEE075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F345C5825101C2B00AEE075 /* Assets.xcassets */; };
+		0F345C5C25101C2B00AEE075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F345C5A25101C2B00AEE075 /* LaunchScreen.storyboard */; };
+		0F345C6625101D7800AEE075 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C6525101D7800AEE075 /* BaseViewController.swift */; };
+		0F345C6825101D8A00AEE075 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C6725101D8A00AEE075 /* Constants.swift */; };
+		0F345C72251021EB00AEE075 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C71251021EB00AEE075 /* Connection.swift */; };
+		0F345C752510221000AEE075 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C742510221000AEE075 /* GenericResponse.swift */; };
+		0F345C7A251022F100AEE075 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C79251022F100AEE075 /* SessionModel.swift */; };
+		0F345C7D25102A5100AEE075 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C7C25102A5100AEE075 /* LoginInteractor.swift */; };
+		0F345C8025102A6300AEE075 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C7F25102A6300AEE075 /* LoginPresenter.swift */; };
+		0F345C8325102A7700AEE075 /* LoginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C8225102A7700AEE075 /* LoginInterface.swift */; };
+		0F345C8525102A8500AEE075 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C8425102A8500AEE075 /* LoginWireFrame.swift */; };
+		0F345C8825102A9D00AEE075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C8725102A9D00AEE075 /* LoginViewController.swift */; };
+		0F345C8B25102BCA00AEE075 /* FinerioServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C8A25102BCA00AEE075 /* FinerioServices.swift */; };
+		0F345C8D25102BE000AEE075 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C8C25102BE000AEE075 /* Utils.swift */; };
+		0F345C902510330500AEE075 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F345C8F2510330500AEE075 /* splash.json */; };
+		0F345C932510340D00AEE075 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C922510340D00AEE075 /* UIView+Extension.swift */; };
+		0F345C98251035BD00AEE075 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C97251035BD00AEE075 /* SplashViewController.swift */; };
+		0F345C9A25103E4500AEE075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345C9925103E4500AEE075 /* SceneDelegate.swift */; };
+		0FDA58142510A7E900E20CA6 /* MovementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA58132510A7E900E20CA6 /* MovementTableViewCell.swift */; };
+		0FDA581625116F6400E20CA6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA581525116F6400E20CA6 /* UILabel+Extension.swift */; };
+		0FDA58182511927D00E20CA6 /* ScrollActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA58172511927D00E20CA6 /* ScrollActivityIndicator.swift */; };
+		0FDA581B2511981100E20CA6 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA581A2511981100E20CA6 /* BaseInterceptor.swift */; };
+		0FF5DC1E2510413D000B22EA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC1D2510413D000B22EA /* UIColor+Extension.swift */; };
+		0FF5DC2025108040000B22EA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC1F25108040000B22EA /* UserModel.swift */; };
+		0FF5DC28251084DF000B22EA /* MovementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC27251084DF000B22EA /* MovementModel.swift */; };
+		0FF5DC2A2510853A000B22EA /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC292510853A000B22EA /* Reach.swift */; };
+		0FF5DC2C25108853000B22EA /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF5DC2B25108853000B22EA /* loading.json */; };
+		0FF5DC2F2510904F000B22EA /* MovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC2E2510904F000B22EA /* MovementViewController.swift */; };
+		0FF5DC312510937E000B22EA /* MovementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC302510937E000B22EA /* MovementInteractor.swift */; };
+		0FF5DC35251093BE000B22EA /* MovementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC34251093BE000B22EA /* MovementPresenter.swift */; };
+		0FF5DC3725109430000B22EA /* MovementInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC3625109430000B22EA /* MovementInterface.swift */; };
+		0FF5DC392510963C000B22EA /* MovementWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5DC382510963C000B22EA /* MovementWireFrame.swift */; };
+		47AE33695F699AD991842327 /* Pods_FinerioAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9CA63F892285CFD87E2DE /* Pods_FinerioAppTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B3F9C8BDBF63E0777B1DE1 /* Pods-FinerioAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinerioAppTest.debug.xcconfig"; path = "Target Support Files/Pods-FinerioAppTest/Pods-FinerioAppTest.debug.xcconfig"; sourceTree = "<group>"; };
+		04079BB2CA6568EFF1594F71 /* Pods-FinerioAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinerioAppTest.release.xcconfig"; path = "Target Support Files/Pods-FinerioAppTest/Pods-FinerioAppTest.release.xcconfig"; sourceTree = "<group>"; };
+		0F345C4C25101C2900AEE075 /* FinerioAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinerioAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F345C4F25101C2900AEE075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F345C5625101C2900AEE075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F345C5825101C2B00AEE075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F345C5B25101C2B00AEE075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F345C5D25101C2B00AEE075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F345C6525101D7800AEE075 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0F345C6725101D8A00AEE075 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0F345C71251021EB00AEE075 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		0F345C742510221000AEE075 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		0F345C79251022F100AEE075 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		0F345C7C25102A5100AEE075 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0F345C7F25102A6300AEE075 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		0F345C8225102A7700AEE075 /* LoginInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterface.swift; sourceTree = "<group>"; };
+		0F345C8425102A8500AEE075 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		0F345C8725102A9D00AEE075 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0F345C8A25102BCA00AEE075 /* FinerioServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinerioServices.swift; sourceTree = "<group>"; };
+		0F345C8C25102BE000AEE075 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0F345C8F2510330500AEE075 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
+		0F345C922510340D00AEE075 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0F345C97251035BD00AEE075 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0F345C9925103E4500AEE075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0FDA58132510A7E900E20CA6 /* MovementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTableViewCell.swift; sourceTree = "<group>"; };
+		0FDA581525116F6400E20CA6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		0FDA58172511927D00E20CA6 /* ScrollActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollActivityIndicator.swift; sourceTree = "<group>"; };
+		0FDA581A2511981100E20CA6 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		0FF5DC1D2510413D000B22EA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0FF5DC1F25108040000B22EA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0FF5DC27251084DF000B22EA /* MovementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementModel.swift; sourceTree = "<group>"; };
+		0FF5DC292510853A000B22EA /* Reach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		0FF5DC2B25108853000B22EA /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		0FF5DC2E2510904F000B22EA /* MovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementViewController.swift; sourceTree = "<group>"; };
+		0FF5DC302510937E000B22EA /* MovementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementInteractor.swift; sourceTree = "<group>"; };
+		0FF5DC34251093BE000B22EA /* MovementPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementPresenter.swift; sourceTree = "<group>"; };
+		0FF5DC3625109430000B22EA /* MovementInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementInterface.swift; sourceTree = "<group>"; };
+		0FF5DC382510963C000B22EA /* MovementWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementWireFrame.swift; sourceTree = "<group>"; };
+		ACA9CA63F892285CFD87E2DE /* Pods_FinerioAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinerioAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F345C4925101C2900AEE075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AE33695F699AD991842327 /* Pods_FinerioAppTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F345C4325101C2900AEE075 = {
+			isa = PBXGroup;
+			children = (
+				0F345C4E25101C2900AEE075 /* FinerioAppTest */,
+				0F345C4D25101C2900AEE075 /* Products */,
+				CF9C2397171136D1751DB9BF /* Pods */,
+				F69F4BC52845D85C3CDEA81F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0F345C4D25101C2900AEE075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C4C25101C2900AEE075 /* FinerioAppTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F345C4E25101C2900AEE075 /* FinerioAppTest */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C6325101D6100AEE075 /* Application */,
+				0F345C6425101D6D00AEE075 /* Common */,
+				0F345C91251033F900AEE075 /* Extensions */,
+				0F345C942510352300AEE075 /* Helpers */,
+				0F345C6F251021D800AEE075 /* Manager */,
+				0F345C762510228C00AEE075 /* Sections */,
+				0F345C6E2510202E00AEE075 /* Supporting Files */,
+			);
+			path = FinerioAppTest;
+			sourceTree = "<group>";
+		};
+		0F345C6325101D6100AEE075 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C4F25101C2900AEE075 /* AppDelegate.swift */,
+				0F345C9925103E4500AEE075 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0F345C6425101D6D00AEE075 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C6525101D7800AEE075 /* BaseViewController.swift */,
+				0F345C6725101D8A00AEE075 /* Constants.swift */,
+				0F345C8C25102BE000AEE075 /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0F345C6E2510202E00AEE075 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC2B25108853000B22EA /* loading.json */,
+				0F345C8F2510330500AEE075 /* splash.json */,
+				0F345C5D25101C2B00AEE075 /* Info.plist */,
+				0F345C5825101C2B00AEE075 /* Assets.xcassets */,
+				0F345C5A25101C2B00AEE075 /* LaunchScreen.storyboard */,
+				0F345C5525101C2900AEE075 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F345C6F251021D800AEE075 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C70251021E200AEE075 /* Connection */,
+				0FDA5819251197FC00E20CA6 /* Interceptors */,
+				0F345C732510220500AEE075 /* Responses */,
+				0F345C8925102BB000AEE075 /* Services */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0F345C70251021E200AEE075 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C71251021EB00AEE075 /* Connection.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		0F345C732510220500AEE075 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C742510221000AEE075 /* GenericResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		0F345C762510228C00AEE075 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC2125108494000B22EA /* Movement */,
+				0F345C8E2510311100AEE075 /* Splash */,
+				0F345C772510229100AEE075 /* Login */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		0F345C772510229100AEE075 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C78251022CD00AEE075 /* Entity */,
+				0F345C7B25102A4600AEE075 /* Interactor */,
+				0F345C7E25102A5900AEE075 /* Presenter */,
+				0F345C8125102A6B00AEE075 /* Route */,
+				0F345C8625102A9000AEE075 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0F345C78251022CD00AEE075 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C79251022F100AEE075 /* SessionModel.swift */,
+				0FF5DC1F25108040000B22EA /* UserModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0F345C7B25102A4600AEE075 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C7C25102A5100AEE075 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0F345C7E25102A5900AEE075 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C7F25102A6300AEE075 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0F345C8125102A6B00AEE075 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C8225102A7700AEE075 /* LoginInterface.swift */,
+				0F345C8425102A8500AEE075 /* LoginWireFrame.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		0F345C8625102A9000AEE075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C8725102A9D00AEE075 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F345C8925102BB000AEE075 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C8A25102BCA00AEE075 /* FinerioServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0F345C8E2510311100AEE075 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0F345C97251035BD00AEE075 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0F345C91251033F900AEE075 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC1D2510413D000B22EA /* UIColor+Extension.swift */,
+				0F345C922510340D00AEE075 /* UIView+Extension.swift */,
+				0FDA581525116F6400E20CA6 /* UILabel+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F345C942510352300AEE075 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC292510853A000B22EA /* Reach.swift */,
+				0FDA58172511927D00E20CA6 /* ScrollActivityIndicator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0FDA5819251197FC00E20CA6 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				0FDA581A2511981100E20CA6 /* BaseInterceptor.swift */,
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		0FF5DC2125108494000B22EA /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC22251084A2000B22EA /* Entity */,
+				0FF5DC23251084A8000B22EA /* Interactor */,
+				0FF5DC26251084C6000B22EA /* Presenter */,
+				0FF5DC24251084AD000B22EA /* Route */,
+				0FF5DC2D2510903D000B22EA /* View */,
+			);
+			path = Movement;
+			sourceTree = "<group>";
+		};
+		0FF5DC22251084A2000B22EA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC27251084DF000B22EA /* MovementModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0FF5DC23251084A8000B22EA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC302510937E000B22EA /* MovementInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0FF5DC24251084AD000B22EA /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC3625109430000B22EA /* MovementInterface.swift */,
+				0FF5DC382510963C000B22EA /* MovementWireFrame.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		0FF5DC26251084C6000B22EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0FF5DC34251093BE000B22EA /* MovementPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0FF5DC2D2510903D000B22EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FDA58132510A7E900E20CA6 /* MovementTableViewCell.swift */,
+				0FF5DC2E2510904F000B22EA /* MovementViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF9C2397171136D1751DB9BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B3F9C8BDBF63E0777B1DE1 /* Pods-FinerioAppTest.debug.xcconfig */,
+				04079BB2CA6568EFF1594F71 /* Pods-FinerioAppTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F69F4BC52845D85C3CDEA81F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9CA63F892285CFD87E2DE /* Pods_FinerioAppTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F345C4B25101C2900AEE075 /* FinerioAppTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F345C6025101C2B00AEE075 /* Build configuration list for PBXNativeTarget "FinerioAppTest" */;
+			buildPhases = (
+				5AEB5951EFF49CD1C6A59D30 /* [CP] Check Pods Manifest.lock */,
+				0F345C4825101C2900AEE075 /* Sources */,
+				0F345C4925101C2900AEE075 /* Frameworks */,
+				0F345C4A25101C2900AEE075 /* Resources */,
+				98743BCEA306B08AF4648398 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinerioAppTest;
+			productName = FinerioAppTest;
+			productReference = 0F345C4C25101C2900AEE075 /* FinerioAppTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F345C4425101C2900AEE075 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Finero;
+				TargetAttributes = {
+					0F345C4B25101C2900AEE075 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 0F345C4725101C2900AEE075 /* Build configuration list for PBXProject "FinerioAppTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F345C4325101C2900AEE075;
+			productRefGroup = 0F345C4D25101C2900AEE075 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F345C4B25101C2900AEE075 /* FinerioAppTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F345C4A25101C2900AEE075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F345C5C25101C2B00AEE075 /* LaunchScreen.storyboard in Resources */,
+				0F345C5925101C2B00AEE075 /* Assets.xcassets in Resources */,
+				0F345C902510330500AEE075 /* splash.json in Resources */,
+				0F345C5725101C2900AEE075 /* Main.storyboard in Resources */,
+				0FF5DC2C25108853000B22EA /* loading.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AEB5951EFF49CD1C6A59D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinerioAppTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98743BCEA306B08AF4648398 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinerioAppTest/Pods-FinerioAppTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinerioAppTest/Pods-FinerioAppTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinerioAppTest/Pods-FinerioAppTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F345C4825101C2900AEE075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF5DC28251084DF000B22EA /* MovementModel.swift in Sources */,
+				0F345C8825102A9D00AEE075 /* LoginViewController.swift in Sources */,
+				0FF5DC1E2510413D000B22EA /* UIColor+Extension.swift in Sources */,
+				0FDA58182511927D00E20CA6 /* ScrollActivityIndicator.swift in Sources */,
+				0F345C752510221000AEE075 /* GenericResponse.swift in Sources */,
+				0F345C932510340D00AEE075 /* UIView+Extension.swift in Sources */,
+				0F345C98251035BD00AEE075 /* SplashViewController.swift in Sources */,
+				0FDA581625116F6400E20CA6 /* UILabel+Extension.swift in Sources */,
+				0FF5DC3725109430000B22EA /* MovementInterface.swift in Sources */,
+				0F345C8525102A8500AEE075 /* LoginWireFrame.swift in Sources */,
+				0F345C6825101D8A00AEE075 /* Constants.swift in Sources */,
+				0FF5DC35251093BE000B22EA /* MovementPresenter.swift in Sources */,
+				0FF5DC2A2510853A000B22EA /* Reach.swift in Sources */,
+				0FF5DC392510963C000B22EA /* MovementWireFrame.swift in Sources */,
+				0F345C8B25102BCA00AEE075 /* FinerioServices.swift in Sources */,
+				0F345C8D25102BE000AEE075 /* Utils.swift in Sources */,
+				0F345C8025102A6300AEE075 /* LoginPresenter.swift in Sources */,
+				0F345C9A25103E4500AEE075 /* SceneDelegate.swift in Sources */,
+				0F345C8325102A7700AEE075 /* LoginInterface.swift in Sources */,
+				0F345C72251021EB00AEE075 /* Connection.swift in Sources */,
+				0FF5DC312510937E000B22EA /* MovementInteractor.swift in Sources */,
+				0F345C6625101D7800AEE075 /* BaseViewController.swift in Sources */,
+				0F345C5025101C2900AEE075 /* AppDelegate.swift in Sources */,
+				0FF5DC2F2510904F000B22EA /* MovementViewController.swift in Sources */,
+				0F345C7A251022F100AEE075 /* SessionModel.swift in Sources */,
+				0FDA581B2511981100E20CA6 /* BaseInterceptor.swift in Sources */,
+				0FF5DC2025108040000B22EA /* UserModel.swift in Sources */,
+				0FDA58142510A7E900E20CA6 /* MovementTableViewCell.swift in Sources */,
+				0F345C7D25102A5100AEE075 /* LoginInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F345C5525101C2900AEE075 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F345C5625101C2900AEE075 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F345C5A25101C2B00AEE075 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F345C5B25101C2B00AEE075 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F345C5E25101C2B00AEE075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F345C5F25101C2B00AEE075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F345C6125101C2B00AEE075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B3F9C8BDBF63E0777B1DE1 /* Pods-FinerioAppTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFDLJ2DHRX;
+				INFOPLIST_FILE = "FinerioAppTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.finerio.FinerioAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0F345C6225101C2B00AEE075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04079BB2CA6568EFF1594F71 /* Pods-FinerioAppTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFDLJ2DHRX;
+				INFOPLIST_FILE = "FinerioAppTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.finerio.FinerioAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F345C4725101C2900AEE075 /* Build configuration list for PBXProject "FinerioAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F345C5E25101C2B00AEE075 /* Debug */,
+				0F345C5F25101C2B00AEE075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F345C6025101C2B00AEE075 /* Build configuration list for PBXNativeTarget "FinerioAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F345C6125101C2B00AEE075 /* Debug */,
+				0F345C6225101C2B00AEE075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F345C4425101C2900AEE075 /* Project object */;
+}
